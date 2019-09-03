@@ -15,7 +15,7 @@ read port
 echo "enter username"
 read username
 
-echo "enter password -----Note: use %40 in place of @"
+echo "enter password -----Note: use %40 in place of @ (if any)"
 read -s password
 
 
