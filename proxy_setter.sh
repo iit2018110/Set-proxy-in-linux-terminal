@@ -6,17 +6,17 @@ cd /etc/apt
 
 touch newfile.txt
 
-echo "enter proxy"
-read proxy
+echo "enter proxy : "
+read -n proxy
 
-echo "enter port"
-read port
+echo "enter port : "
+read -n port
 
-echo "enter username"
-read username
+echo "enter username : "
+read -n username
 
-echo "enter password -----Note: use %40 in place of @ (if any)"
-read -s password
+echo "enter password -----Note: use %40 in place of @ (if any) : "
+read -n -s password
 
 
 for p in "${protocols[@]}";
