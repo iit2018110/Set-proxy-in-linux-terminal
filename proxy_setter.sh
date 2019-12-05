@@ -19,7 +19,7 @@ echo "enter password -----Note: use %40 in place of @ (if any) : "
 read -s password
 
 
-for p in "${protocols[@]}";
+for p in "${protocols[@]}"
 do
 	echo "Acquire::$p::proxy \"$p://$username:$password@$proxy:$port/\";" >> newfile.txt
 done
