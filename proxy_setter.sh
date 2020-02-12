@@ -24,6 +24,9 @@ do
 	echo "Acquire::$p::proxy \"$p://$username:$password@$proxy:$port/\";" >> newfile.txt
 done
 
+sudo snap set system proxy.http="http://$proxy:$port"
+sudo snap set system proxy.https="http://$proxy:$port"
+
 cat newfile.txt > apt.conf
 
 rm newfile.txt
